@@ -1,0 +1,54 @@
+{
+  "name": "simple_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.ts",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon --watch ./src --ext js,jsx,ts,tsx,json --exec ts-node --transpile-only 'src/server.ts'",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeyamato/simple_account_creation_and_password_reset_application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeyamato/simple_account_creation_and_password_reset_application/issues"
+  },
+  "homepage": "https://github.com/mikeyamato/simple_account_creation_and_password_reset_application#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongodb": "^3.3.3",
+    "mongoose": "^5.7.5",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/body-parser": "^1.17.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.1",
+    "@types/lodash": "^4.14.144",
+    "@types/mongodb": "^3.3.6",
+    "@types/passport": "^1.0.1",
+    "@types/passport-jwt": "^3.0.2",
+    "cookie-parser": "^1.4.4",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
+  }
+}

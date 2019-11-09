@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import '~antd/dist/antd.css'; /* Import Ant Design styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Source Sans Pro"
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #23323c !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+p {
+  font-family: "Source Sans Pro";
+}
+
+.ant-btn-link:hover {
+	background-color: #30a384 !important;
+}
+
+.ant-btn-link {
+	background-color: #19b188 !important;
+}
+
+.has-error .ant-form-explain, .has-error .ant-form-split {
+  text-align: center;
+}
+
